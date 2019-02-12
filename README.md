@@ -97,8 +97,8 @@ textOutput("keep_alive")
 ##### server.R
 ```r
 output$keep_alive <- renderText({
-req(input$alive_count)
-input$alive_count
+  req(input$alive_count)
+  input$alive_count
 })
 ```
 
@@ -108,20 +108,20 @@ var socket_timeout_interval;
 var n = 0;
 	
 $(document).on('shiny:connected', function(event) {
-socket_timeout_interval = setInterval(function() {
-Shiny.onInputChange('alive_count', n++)
-}, 10000);
+  socket_timeout_interval = setInterval(function() {
+    Shiny.onInputChange('alive_count', n++)
+  }, 10000);
 });
 
 $(document).on('shiny:disconnected', function(event) {
-clearInterval(socket_timeout_interval);
+  clearInterval(socket_timeout_interval);
 });
 ```
 	
 ##### CSS
 ```css
 #keep_alive {
-visibility: hidden;
+  visibility: hidden;
 }
 ```
 
@@ -131,7 +131,7 @@ Since making a new deployment restarts the dyno, it will interrupt the browsing 
 	
 ```javascript
 $(document).on('shiny:disconnected', function(event) {
-// display a message, open a modal window, etc.
+  // display a message, open a modal window, etc.
 });
 ```
 
