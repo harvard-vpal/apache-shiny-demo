@@ -3,7 +3,6 @@ library(dplyr)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-
    # Application title
    titlePanel("Old Faithful Geyser Data"),
 
@@ -28,7 +27,6 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-
    output$distPlot <- renderPlot({
       # generate bins based on input$bins from ui.R
       x    <- faithful[, 2]

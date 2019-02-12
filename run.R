@@ -11,6 +11,6 @@ print(paste("Listening on port", port))
 
 shiny::runApp(
   appDir = getwd(),
-  host = '127.0.0.1',
+  host = "127.0.0.1",
   port = as.numeric(port)
 )
