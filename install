@@ -1,0 +1,10 @@
+#!/bin/bash
+
+heroku create --stack heroku-16
+
+app=$(heroku apps:info --json | jq -r '.app.name')
+
+heroku buildpacks:add https://github.com/dpmccabe/heroku-buildpack-r.git#heroku-16-packrat --app $app
+heroku buildpacks:add https://github.com/virtualstaticvoid/heroku-buildpack-apache.git#appconfig --app $app
+
+git push heroku master
