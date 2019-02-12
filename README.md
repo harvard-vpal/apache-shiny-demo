@@ -128,12 +128,12 @@ visibility: hidden;
 ### Improve the session disconnect experience
 
 Since making a new deployment restarts the dyno, it will interrupt the browsing sessions of current users and they will need to refresh the page. Avoid doing this while many users are connected. However, if you do deploy or the dyno cycles or restarts for some other reason (you can be assured the dyno will cycle/restart once per day), you can prompt the user to refresh the page by listening for the Shiny disconnect event:
-
-	```javascript
-	$(document).on('shiny:disconnected', function(event) {
-	  // display a message, open a modal window, etc.
-	});
-	```
+	
+```javascript
+$(document).on('shiny:disconnected', function(event) {
+// display a message, open a modal window, etc.
+});
+```
 
 ### Character encoding
 
