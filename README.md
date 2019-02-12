@@ -15,7 +15,7 @@ This is a Shiny app that uses an Apache load balancer to launch multiple R proce
 	* [https://github.com/harvard-vpal/heroku-buildpack-r](https://github.com/harvard-vpal/heroku-buildpack-r)
 	* [https://github.com/harvard-vpal/heroku-buildpack-apache](https://github.com/harvard-vpal/heroku-buildpack-apache)
 
-  To lock the buildpack versions to a specific Git branch or tag (recommended), you can instead use this format:
+   To lock the buildpack versions to a specific Git branch or tag (recommended), you can instead use this format:
  
    * `https://github.com/harvard-vpal/heroku-buildpack-r.git#v1.0.0`
    * `https://github.com/harvard-vpal/heroku-buildpack-apache.git#v1.0.0`
