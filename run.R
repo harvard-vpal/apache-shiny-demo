@@ -1,9 +1,9 @@
-
 # obtain port argument (if given)
-args = commandArgs(trailingOnly=TRUE)
-if (length(args)==0) {
+args <- commandArgs(trailingOnly = TRUE)
+
+if (length(args) == 0) {
 	port <- "12000"
-} else if (length(args)==1) {
+} else if (length(args) == 1) {
   port <- args[1]
 }
 

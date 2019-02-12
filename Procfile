@@ -1,1 +1,1 @@
-web: bash ./boot.sh "/app/run-workers.sh"
+web: bash ./boot.sh "/app/run_workers.sh"
