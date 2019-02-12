@@ -1,1 +1,1 @@
-web: bash ./boot.sh "fakechroot fakeroot chroot /app/.root /bin/sh -c 'cd /app && /usr/bin/R -f /app/run.R --gui-none --no-save'"
+web: bash ./boot.sh "/app/run-workers.sh"
