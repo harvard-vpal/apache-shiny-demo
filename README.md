@@ -50,7 +50,7 @@ The first push to your Heroku remote will compile R, Apache, and install all req
 To invalidate the cache, install [heroku-repo](https://github.com/heroku/heroku-repo) and run:
 
 ```bash
-heroku repo:reset --app apache-shiny-demo
+heroku repo:purge_cache --app apache-shiny-demo
 ```
 
 The next deploy will recompile all of your dependencies.
