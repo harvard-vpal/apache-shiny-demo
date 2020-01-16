@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.9.7
-RVersion: 3.4.4
+RVersion: 3.6.2
 Repos: CRAN=https://cran.rstudio.com
 
 Package: BH
@@ -62,6 +62,11 @@ Source: CRAN
 Version: 0.4.0
 Hash: f147621f72b561485bfffcae78c4f5d5
 
+Package: fastmap
+Source: CRAN
+Version: 1.0.1
+Hash: d272cd728e4095b3964181b44763f46c
+
 Package: glue
 Source: CRAN
 Version: 1.3.0
@@ -69,15 +74,15 @@ Hash: 1fbde6dec830370be696eee8ef31c9e4
 
 Package: htmltools
 Source: CRAN
-Version: 0.3.6
-Hash: 9707abea0a9b7406e98fb1242e97e1f6
-Requires: Rcpp, digest
+Version: 0.4.0
+Hash: 2e58fffa2231533741ec1d4205cdc595
+Requires: Rcpp, digest, rlang
 
 Package: httpuv
 Source: CRAN
-Version: 1.4.5
-Hash: 7bdd27ecf56e3e767d123202132bae64
-Requires: BH, Rcpp, later, promises
+Version: 1.5.2
+Hash: 74a2c9a3b03e6078dd23e8a026de6568
+Requires: BH, R6, Rcpp, later, promises
 
 Package: jsonlite
 Source: CRAN
@@ -86,8 +91,8 @@ Hash: 9c51936d8dd00b2f1d4fe9d10499694c
 
 Package: later
 Source: CRAN
-Version: 0.7.3
-Hash: 7e61ae15bc1a49a554ba88d320dfb4ff
+Version: 1.0.0
+Hash: c594037cfdcb5aa0085a053310d2c31e
 Requires: BH, Rcpp, rlang
 
 Package: magrittr
@@ -127,8 +132,8 @@ Hash: 81a8008a5e7858552503935f1abe48aa
 
 Package: promises
 Source: CRAN
-Version: 1.0.1
-Hash: 1a91e34614bd7c70892c9c59983723f9
+Version: 1.1.0
+Hash: 681b97062ec282e9eed5bec498d1a163
 Requires: R6, Rcpp, later, magrittr, rlang
 
 Package: purrr
@@ -139,15 +144,15 @@ Requires: magrittr, rlang
 
 Package: rlang
 Source: CRAN
-Version: 0.3.1
-Hash: 1176a91e0c23d4fc8f48bc5704a6f826
+Version: 0.4.2
+Hash: c5cfcde637bbff4e42edad2e69dac5c7
 
 Package: shiny
 Source: CRAN
-Version: 1.1.0
-Hash: ab653b45dba6dc82eef68fb1e18a3b1a
-Requires: R6, crayon, digest, htmltools, httpuv, jsonlite, later, mime,
-    promises, rlang, sourcetools, xtable
+Version: 1.4.0
+Hash: 7a1d8725849ecb792b4df2c084769c23
+Requires: R6, crayon, digest, fastmap, htmltools, httpuv, jsonlite,
+    later, mime, promises, rlang, sourcetools, xtable
 
 Package: sourcetools
 Source: CRAN
